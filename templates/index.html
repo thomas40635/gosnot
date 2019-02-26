@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main_content %}
+    <div class="divided-content">
+        <div class="image-part">
+            <div class="image-container">
+                <img src="{% static 'img/index_background.png' %}" alt="">
+            </div>
+        </div>
+        <div class="text-part">
+            <div class="text-container">
+                <h1>Réunir artistes<br>
+                    et organisateurs</h1>
+                <p>
+                    Vous êtes à la recherche de musiciens pour animer votre bar ?<br>
+                    Vous cherchez des scènes pour partager votre passion pour la musique ?<br>
+                    <br>
+                    Ce site est fait pour vous !<br>
+                    Entrez en contact avec des artistes et des organisateurs pour programmer
+                    votre prochaine date.
+                </p>
+                <div class="button-container">
+                    <a href="{% url 'artist_create_view' %}">
+                        <button class="button1">
+                            <span>Je suis un</span>
+                            <h1>Organisateur</h1>
+                        </button>
+                    </a>
+                    <a href="{% url 'artist_create_view' %}">
+                        <button class="button2">
+                            <span>Je suis un</span>
+                            <h1>Artiste</h1>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

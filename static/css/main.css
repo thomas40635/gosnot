@@ -1,0 +1,161 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.burger-menu {
+    height: 20px;
+    width: 30px;
+    position: relative;
+}
+
+.burger-menu .barre {
+    width: 100%;
+    height: 4px;
+    border-radius: 100px;
+    background: var(--grey1-color);
+    position: absolute;
+    left: 0;
+}
+
+.burger-menu .barre1 {
+    top: 0;
+}
+
+.burger-menu .barre2 {
+    top: 50%;
+    background: var(--grey2-color);
+    transform: translateY(-50%);
+}
+
+.burger-menu .barre3 {
+    bottom: 0;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    color: var(--grey1-color);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.divided-content {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.divided-content .image-part {
+    position: relative;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+
+.divided-content .image-part .image-container {
+    background: var(--grey1-color);
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+
+    transform-style: preserve-3d;
+    transform: perspective(12cm) rotateX(4deg) rotateY(4deg);
+}
+
+.divided-content .image-part .image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    transform: rotateX(-4deg) rotateY(-4deg);
+}
+
+.divided-content .text-part {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.divided-content .text-part .text-container {
+    display: flex;
+    flex-direction: column;
+    padding:40px;
+}
+
+.divided-content .text-part .text-container h1 {
+    font-size: 64px;
+    color: var(--grey2-color);
+    font-family: var(--main-font);
+}
+
+.divided-content .text-part .text-container p {
+    font-size: 16px;
+    max-width: 500px;
+    color: var(--grey2-color);
+    font-family: var(--second-font);
+    margin-top: 20px;
+    line-height: 24px;
+}
+
+.divided-content .text-part .text-container .button-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.divided-content .text-part .text-container .button-container button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    width: 200px;
+}
+
+.divided-content .text-part .text-container .button-container button span{
+    font-family: var(--second-font);
+    font-size: 12px;
+    color: #fff;
+}
+
+.divided-content .text-part .text-container .button-container button h1{
+    font-family: var(--main-font);
+    font-size: 20px;
+    color: #fff;
+}
+
+.divided-content .text-part .text-container .button-container .button1{
+    background: var(--grey1-color);
+    margin-right: 20px;
+}
+
+.divided-content .text-part .text-container .button-container .button2{
+    background: var(--green-color);
+}

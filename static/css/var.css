@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Whitney Bold";
+    src: url("../font/WhitneyBold.ttf");
+}
+
+@font-face {
+    font-family: "Google-Sans Regular";
+    src: url("../font/GoogleSansRegular.ttf");
+}
+
+html{
+    --dark-color: #2E2D2E;
+    --grey1-color: #62737D;
+    --grey2-color: #889AA6;
+    --green-color: #27BB4E;
+    --main-font: "Whitney Bold", sans-serif;
+    --second-font: "Google-Sans Regular", sans-serif;
+}

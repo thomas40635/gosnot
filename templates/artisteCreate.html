@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main_content %}
+    <div class="divided-content">
+        <div class="image-part">
+            <div class="image-container">
+                <img src="{% static 'img/index_background.png' %}" alt="">
+            </div>
+        </div>
+        <div class="text-part">
+            <div class="text-container">
+                <h1>Créer ma page<br>
+                    et trouver des scènes</h1>
+                <form method="post" novalidate>
+                    {% csrf_token %}
+                    {{ form }}
+                    <div class="button-container">
+                        <button type="submit" class="button2">
+                            <span>Créer ma</span>
+                            <h1>Page</h1>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
